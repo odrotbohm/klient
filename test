@@ -1,0 +1,55 @@
+
+{
+  "_embedded" : {
+    "restbucks:orders" : [ {
+      "status" : "Ready",
+      "orderedDate" : "2019-07-22T09:48:40.974",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/orders/1"
+        },
+        "restbucks:order" : {
+          "href" : "http://localhost:8080/orders/1{?projection}",
+          "templated" : true,
+          "title" : "An order"
+        }
+      }
+    }, {
+      "status" : "Payment expected",
+      "orderedDate" : "2019-07-22T09:48:40.974",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/orders/3"
+        },
+        "restbucks:order" : {
+          "href" : "http://localhost:8080/orders/3{?projection}",
+          "templated" : true,
+          "title" : "An order"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/orders{?page,size,sort,projection}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/profile/orders"
+    },
+    "search" : {
+      "href" : "http://localhost:8080/orders/search"
+    },
+    "curies" : [ {
+      "href" : "http://localhost:8080/docs/{rel}.html",
+      "name" : "restbucks",
+      "templated" : true
+    } ]
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 2,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}

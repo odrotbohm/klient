@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Hypermedia Client</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_reload">Reload</string>
+</resources>
